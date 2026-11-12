@@ -16,7 +16,7 @@ export default function CitadelMasthead() {
       const el = textRef.current;
       if (!el || disposed) return;
       const probe = document.createElement('span');
-      probe.textContent = 'CITADEL';
+      probe.textContent = 'CITADEL AI';
       Object.assign(probe.style, {
         position: 'absolute',
         visibility: 'hidden',
@@ -60,7 +60,7 @@ export default function CitadelMasthead() {
           transformOrigin: 'center center',
         }}
       >
-        CITADEL
+        CITADEL <span className="text-[#FF2D16]">AI</span>
       </span>
     </div>
   );
