@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Sparkles, Layers, Cpu, GitBranch, ArrowUpRight } from 'lucide-react';
 
-import deliveryDroneImg from '../assets/images/accelerated_delivery_pod_1794509319809.jpg';
-import deliveryHubImg from '../assets/images/model_delivery_hub_1794509333485.jpg';
-import deliveryVesselImg from '../assets/images/cloud_delivery_cargo_1794509348173.jpg';
-import deliveryVaultImg from '../assets/images/secure_delivery_vault_1794509362499.jpg';
+import softwareCodeDeliveryImg from '../assets/images/software_code_delivery_1794523523300.jpg';
+import softwareModelWiringImg from '../assets/images/software_model_wiring_1794523538196.jpg';
+import softwareCloudBuildImg from '../assets/images/software_cloud_build_1794523552543.jpg';
+import softwareGitGovernanceImg from '../assets/images/software_git_governance_1794523568262.jpg';
 
 interface CapabilityItem {
   id: string;
@@ -25,7 +25,7 @@ const CAPABILITIES: CapabilityItem[] = [
     kicker: 'AI-assisted development',
     title: 'Accelerated delivery',
     line: 'Go from specification to a production-ready interface with every iteration validated in a live preview.',
-    image: deliveryDroneImg,
+    image: softwareCodeDeliveryImg,
     icon: <Sparkles className="w-4 h-4 text-[#FF2D16]" />,
   },
   {
@@ -35,7 +35,7 @@ const CAPABILITIES: CapabilityItem[] = [
     kicker: 'Open models',
     title: 'Open model integration',
     line: 'Discover, evaluate and wire Hugging Face models into your applications with license and provenance visibility.',
-    image: deliveryHubImg,
+    image: softwareModelWiringImg,
     icon: <Cpu className="w-4 h-4 text-[#FF2D16]" />,
   },
   {
@@ -45,7 +45,7 @@ const CAPABILITIES: CapabilityItem[] = [
     kicker: 'Cloud builds',
     title: 'Build and publish',
     line: 'Design, import, build and publish AI-powered applications with cloud builds and GitHub integration.',
-    image: deliveryVesselImg,
+    image: softwareCloudBuildImg,
     icon: <Layers className="w-4 h-4 text-[#FF2D16]" />,
   },
   {
@@ -55,7 +55,7 @@ const CAPABILITIES: CapabilityItem[] = [
     kicker: 'Code ownership',
     title: 'Full version governance',
     line: 'Source, conversations and revisions are retained together. Roll back, audit or export at any time.',
-    image: deliveryVaultImg,
+    image: softwareGitGovernanceImg,
     icon: <GitBranch className="w-4 h-4 text-[#FF2D16]" />,
   },
 ];
